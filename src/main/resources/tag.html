@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body style="margin: 0px;padding: 0px;">
+    <table align="center" style="font-size: 11px;">
+        <tr>
+            <td colspan="4"><b>模板标签说明：</b></td>
+        </tr>
+        <tr>
+            <td>${name}</td>
+            <td>模块名称</td>
+            <td>${tableName}</td>
+            <td>表名</td>
+        </tr>
+        <tr>
+            <td>${nameAllLowerCase}</td>
+            <td>模块小写名称</td>
+            <td>${nameAllUpperCase}</td>
+            <td>模块大写名称</td>
+        </tr>
+        <tr>
+            <td>${nameFirLetterLc}</td>
+            <td>模块首字母小写</td>
+            <td>${nameFirLetterUc}</td>
+            <td>模块首字母大写</td>
+        </tr>
+        <tr>
+            <td>${pkg}</td>
+            <td>包名</td>
+            <td>${fields}</td>
+            <td>字段列表</td>
+        </tr>
+        <tr>
+            <td colspan="2">&lt;#list fields as field>&lt;/#list></td>
+            <td colspan="2">遍历字段</td>
+        </tr>
+        <tr>
+            <td>${field.key?string}</td>
+            <td>是否主键&nbsp;boolean</td>
+            <td>${field.tabName}</td>
+            <td>数据库字段</td>
+        </tr>
+        <tr>
+            <td>${field.tabType}</td>
+            <td>数据库字段类型</td>
+            <td>${field.tabLength}</td>
+            <td>数据库字段长度</td>
+        </tr>
+        <tr>
+            <td>${field.comment}</td>
+            <td>数据库字段描述</td>
+            <td>${field.javaType}</td>
+            <td>java字段类型&nbsp;int</td>
+        </tr>
+        <tr>
+            <td>${field.fieldName}</td>
+            <td>类属性名称</td>
+            <td>${field.fieldType}</td>
+            <td>类属性类型</td>
+        </tr>
+    </table>
+</body>
+</html>
